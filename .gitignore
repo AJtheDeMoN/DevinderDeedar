@@ -1,8 +1,8 @@
 # Node modules directory
+build/
 node_modules/
 
 # Build output directory
-build/
 
 # Environment variables file
 .env
