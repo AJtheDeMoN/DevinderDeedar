@@ -28,7 +28,7 @@ function NavList() {
         className="p-1"
       >
         <a href="/books" className="flex items-center hover:text-blue-100 transition-colors text-2xl punjabi-medium">
-        ਪੁਸਤਕਾਂ
+        ਕਿਤਾਬਾਂ
         </a>
       </Typography>
       <Typography
@@ -38,7 +38,7 @@ function NavList() {
         className="p-1"
       >
         <a href="/articles" className="flex items-center hover:text-blue-100 transition-colors text-2xl punjabi-medium">
-        ਲੇਖ
+        ਲੇਖ / ਵਾਰਤਕ
         </a>
       </Typography>
       <Typography
@@ -58,7 +58,7 @@ function NavList() {
         className="p-1"
       >
         <a href="/quotes" className="flex items-center hover:text-blue-100 transition-colors text-2xl punjabi-medium">
-        ਵਾਰਤਕ
+        ਅਖਾਣਾ / ਵਿਚਾਰ
         </a>
       </Typography>
     </ul>

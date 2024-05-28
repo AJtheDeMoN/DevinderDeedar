@@ -29,7 +29,7 @@ export default function TransactionsTable() {
   const [selectedYears, setSelectedYears] = useState([]);
   const [selectedBooks, setSelectedBooks] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const applicationsPerPage = 10;
+  const applicationsPerPage = 1;
   const [search, setSearch] = useState("");
 
   const navigate = useNavigate();
@@ -143,7 +143,7 @@ export default function TransactionsTable() {
                 className="text-blue-700 underline cursor-pointer"
               >
                 {" "}
-                clear filters
+                ਫਿਲਟਰ ਸਾਫ਼ ਕਰੋ
               </a>
               <div className="mt-4">
                 <span>

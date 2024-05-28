@@ -62,9 +62,9 @@ export default function SimpleCard() {
             <Typography
               variant="h4"
               color={darkMode ? "white" : "blue-gray"}
-              className="mb-0 text-center punjabi-semibold text-4xl"
+              className="mb-0 text-center punjabi-semibold text-3xl"
             >
-              ਦੇਵਿੰਦਰ ਦੀਦਾਰ ਦੁਆਰਾ ਲਿਖੇ ਵਾਰਤਕ
+              ਦੇਵਿੰਦਰ ਦੀਦਾਰ ਦੁਆਰਾ ਲਿਖੇ ਅਖਾਣਾ / ਵਿਚਾਰ
             </Typography>
             <div>
               <br />

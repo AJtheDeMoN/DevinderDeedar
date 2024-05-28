@@ -44,7 +44,7 @@ export default function TransactionsTable() {
         const temp = res.data.stories;
         const years = [...new Set(temp.map((item) => item.year))];
         setAllYears(years);
-        setArticles(res.data.stories.sort((a, b) =>  b.year-a.year));
+        setArticles(res.data.stories.sort((a, b) =>  a.year-b.year));
         setLoading(false);
       })
       .catch((error) => {
@@ -85,7 +85,7 @@ export default function TransactionsTable() {
         });
     }
 
-    return filtered.sort((b,a) => a.year - b.year);
+    return filtered.sort((a,b) => a.year - b.year);
 }, [search, Articles, currentTab, selectedYears]);
 
   const indexOfLastApplication = currentPage * applicationsPerPage;
@@ -121,13 +121,13 @@ export default function TransactionsTable() {
               ਦੇਵਿੰਦਰ ਦੀਦਾਰ ਦੁਆਰਾ ਲਿਖੀਆਂ ਕਹਾਣੀਆਂ
             </Typography>
             <div className="w-full md:w-max pt-3 z-0" value="All">
-              <span className="my-auto mr-4">Apply Filter by:</span>{" "}
+              <span className="my-auto mr-4">ਇਸ ਦੁਆਰਾ ਫਿਲਟਰ ਲਾਗੂ ਕਰੋ:</span>{" "}
               <a
                 onClick={removeAllFilters}
                 className="text-blue-700 underline cursor-pointer"
               >
                 {" "}
-                clear filters
+                ਫਿਲਟਰ ਸਾਫ਼ ਕਰੋ
               </a>
               <div className="mt-4">
                 <span>
