@@ -21,11 +21,55 @@ export default function Slider() {
         />
       </Carousel>
       <style jsx>{`
-        @media (min-width: 768px) {
+        @media (min-width: 400px) and (max-width: 500px) {
           .slider {
-            height: 400px; /* Set the desired height for desktop */
+            height: 280px;
+            transition: height 0.3s ease-in-out;
           }
         }
+        @media (min-width: 500px) and (max-width: 600px) {
+          .slider {
+            height: 300px;
+            transition: height 0.3s ease-in-out;
+          }
+        }
+        @media (min-width: 600px) and (max-width: 768px) {
+          .slider {
+            height: 320px;
+            transition: height 0.3s ease-in-out;
+          }
+        }
+        
+        /* Large screens: width 768px to 992px */
+        @media (min-width: 768px) and (max-width: 992px) {
+          .slider {
+            height: 340px;
+            transition: height 0.3s ease-in-out;
+          }
+        }
+        
+        /* Extra large screens: width 992px to 1200px */
+        @media (min-width: 992px) and (max-width: 1200px) {
+          .slider {
+            height: 350px;
+            transition: height 0.3s ease-in-out;
+          }
+        }
+        
+        /* Super large screens: width 1200px to 1400px */
+        @media (min-width: 1200px) and (max-width: 1400px) {
+          .slider {
+            height: 380px;
+            transition: height 0.3s ease-in-out;
+          }
+        }
+        
+        /* Ultra large screens: width greater than 1400px */
+        @media (min-width: 1400px) {
+          .slider {
+            height: 400px;
+            transition: height 0.3s ease-in-out;
+          }
       `}</style>
     </div>
   );
