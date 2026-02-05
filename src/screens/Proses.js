@@ -1,9 +1,7 @@
 import {
   Card,
   CardBody,
-  CardFooter,
   Typography,
-  Button,
   Switch,
   Spinner,
 } from "@material-tailwind/react";
