@@ -1,9 +1,7 @@
 import {
     Card,
     CardBody,
-    CardFooter,
     Typography,
-    Button,
     Switch,
     Spinner,
   } from "@material-tailwind/react";
@@ -36,7 +34,7 @@ import {
           console.error("Error fetching articles:", error);
           setLoading(false);
         });
-    }, []);
+    }, [id]);
     return (
       <div className={`${darkMode?"bg-black":"bg-white"} pb-12`}>
         <div className="flex justify-end p-4">
