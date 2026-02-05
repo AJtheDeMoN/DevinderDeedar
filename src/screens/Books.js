@@ -3,9 +3,7 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   Typography,
-  Button,
 } from "@material-tailwind/react";
 
 import image1 from "../Images/Book Titles/Anhe Ghorea Di Dor.jpg";
@@ -79,7 +77,7 @@ export default function HorizontalCard() {
               <CardHeader color="blue-gray" className="relative h-56 mt-4">
                 <img
                   src={image}
-                  alt="card-image"
+                  alt=""
                   className="h-full w-full object-cover"
                 />
               </CardHeader>
@@ -104,7 +102,7 @@ export default function HorizontalCard() {
               >
                 <img
                   src={image}
-                  alt="card-image"
+                  alt=""
                   className="h-full w-full object-cover"
                 />
               </CardHeader>
