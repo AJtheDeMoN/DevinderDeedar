@@ -23,7 +23,7 @@ const TABLE_HEAD = ["ਕਹਾਣੀ", "ਸਾਲ"];
 export default function TransactionsTable() {
   const [Articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [currentTab, setCurrentTab] = useState("ਸਾਰੇ");
+  const [currentTab] = useState("ਸਾਰੇ");
   const [allYears, setAllYears] = useState([]);
   const [selectedYears, setSelectedYears] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -125,6 +125,7 @@ export default function TransactionsTable() {
               <a
                 onClick={removeAllFilters}
                 className="text-blue-700 underline cursor-pointer"
+                href="#"
               >
                 {" "}
                 ਫਿਲਟਰ ਸਾਫ਼ ਕਰੋ
@@ -219,9 +220,7 @@ export default function TransactionsTable() {
             ) : (
               CurrentApplications.map(
                 ({ title_punjabi, id, year }, index) => {
-                  const isLast = index === CurrentApplications.length - 1;
-                  const classes = "p-4 border-b border-blue-gray-50 w-full";
-                  const rowColor = index % 2 != 0 ? 'bg-gray-50' : '';
+                  const rowColor = index % 2 !== 0 ? 'bg-gray-50' : '';
                   return (
                     <tr
                       key={id}
